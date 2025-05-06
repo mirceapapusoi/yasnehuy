@@ -1,0 +1,6 @@
+aiogram
+matplotlib
+numpy
+aiohttp
+python-dotenv
+Pillow
