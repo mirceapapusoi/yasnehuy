@@ -22,8 +22,8 @@ BOOBS_COOLDOWN = 3600  # 60 minutes
 logging.basicConfig(level=logging.INFO)
 
 API_TOKEN = '7632023422:AAFvrAScl0hO_Cq0bbvMWeMUJKuxjuWUSME'
-bot = Bot(token=API_TOKEN)
-dp = Dispatcher()
+storage = MemoryStorage()
+dp = Dispatcher(bot=bot, storage=storage)
 
 users_db = {}
 chat_states = {}
