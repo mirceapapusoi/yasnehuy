@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Mircea Papusoi</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      perspective: 1000px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      transform-style: preserve-3d;
+      transform: rotateY(15deg) rotateX(5deg);
+      transition: transform 1s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #00ffff;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: linear-gradient(145deg, #00ffff, #007a7a);
+      color: #000;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,255,255,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-weight: bold;
+    }
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,255,255,0.6);
+    }
+    .return-btn {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      background: transparent;
+      border: none;
+      color: #00ffff;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    .return-btn:hover {
+      color: #00b4b4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1><button class="return-btn" onclick="location.href='index.html'">Mircea Papusoi</button></h1>
+    <p>will be die.. (я хз чп за хуйня?)</p>
+    <a class="btn" href="https://t.me/yoatgoat" target="_blank">Telegram</a>
+    <a class="btn" href="mailto:mirceapapusoi@gmail.com">Email</a>
+  </div>
+</body>
+</html>
